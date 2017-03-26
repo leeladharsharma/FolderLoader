@@ -1,0 +1,14 @@
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\bin\Debug\FolderLoader.exe.config
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\MainWindow.g.cs
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\App.g.cs
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader_MarkupCompile.cache
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader_MarkupCompile.lref
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader.exe
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader.pdb
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\bin\Debug\FolderLoader.exe
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\bin\Debug\FolderLoader.pdb
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\MainWindow.baml
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader.g.resources
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader.Properties.Resources.resources
+c:\users\leeladhar\documents\visual studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader.csproj.GenerateResource.Cache
+C:\Users\leeladhar\Documents\Visual Studio 2015\Projects\FolderLoader\FolderLoader\obj\Debug\FolderLoader.csprojResolveAssemblyReference.cache
