@@ -9,6 +9,7 @@ namespace FolderLoader.ViewModel
 {
     public class FolderViewModel
     {
+
         #region Methods
         
         /// <summary>

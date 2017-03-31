@@ -30,6 +30,10 @@ namespace FolderLoader
 
         public string SelectedImagePath { get; set; }
 
+
+        static readonly string[] FolderSuffixes =
+                  { "bytes", "KB", "MB", "GB", "TB" };
+
         #endregion
 
         #region Methods and Events
@@ -50,7 +54,25 @@ namespace FolderLoader
 
         }
 
- 
+        /// <summary>
+        /// Convert from bytes to appropriate size
+        /// </summary>
+        static string FolderSuffix(Int64 value, int decimalPlaces = 1)
+        {
+            if (value < 0) { return "-" + FolderSuffix(-value); }
+
+            int i = 0;
+            decimal decValue = (decimal)value;
+            while (Math.Round(decValue, decimalPlaces) >= 1000)
+            {
+                decValue /= 1024;
+                i++;
+            }
+
+            return string.Format("{0:n" + decimalPlaces + "} {1}", decValue, FolderSuffixes[i]);
+        }
+
+
         /// <summary>
         /// Load the Drives in the system when application loads
         /// </summary>
@@ -63,8 +85,9 @@ namespace FolderLoader
                 {
                     TreeViewItem item = new TreeViewItem();
                     DriveInfo info = new DriveInfo(s);
-                    double usedSize = info.TotalFreeSpace;
-                    item.Header = s + "          " + usedSize + " bytes"; ;
+                    long usedSize = info.TotalFreeSpace;
+                    String sizeSuffix = FolderSuffix(usedSize);
+                    item.Header = s + "          " +  sizeSuffix;
                     item.Tag = s;
                     item.FontWeight = FontWeights.Normal;
                     item.Items.Add(dummyNode);
@@ -101,9 +124,10 @@ namespace FolderLoader
                             FileInfo info = new FileInfo(s);
 
                             long usedSize = FolderViewModel.CalculateFolderSize(s);
+                            String sizeSuffix = FolderSuffix(usedSize);
                             if (usedSize > value)
                             {
-                                subitem.Header = subTemp + "          " + usedSize + " bytes";
+                                subitem.Header = subTemp + "          " + sizeSuffix;
                                 subitem.Tag = s;
                                 subitem.FontWeight = FontWeights.Normal;
                                 subitem.Items.Add(dummyNode);
